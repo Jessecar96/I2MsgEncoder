@@ -1,0 +1,219 @@
+﻿<SevereQualifiers>
+
+  <!--
+  Q9005 $(PARENT)/#misc_4=Potential for up to 3 inches of snow $(dayOfWeek). $(#misc_6)
+  Q9010 $(PARENT)/#misc_4=Potential for up to 6 inches of snow $(dayOfWeek). $(#misc_6)
+  Q9015 $(PARENT)/#misc_4=Potential for 6-12 inches of snow $(dayOfWeek). $(#misc_6)
+  Q9020 $(PARENT)/#misc_4=Potential for a foot or more of snow $(dayOfWeek). $(#misc_6)
+  Q9025 $(PARENT)/#misc_4=Potential for significant snowfall $(dayOfWeek). $(#misc_6)
+  Q9030 $(PARENT)/#misc_4=Potential for blizzard $(dayOfWeek). $(#misc_6)
+  Q9205 $(PARENT)/#misc_4=Potential for some icing $(dayOfWeek). $(#misc_6)
+  Q9210 $(PARENT)/#misc_4=Potential for significant icing $(dayOfWeek). $(#misc_6)
+  Q9300 $(PARENT)/#misc_4=Drought conditions should continue $(dayOfWeek). $(#misc_6)
+  Q9350 $(PARENT)/#misc_4=Strong Santa Ana winds possible $(dayOfWeek). $(#misc_6)
+  Q9405 $(PARENT)/#misc_4=Potential for heavy rainfall $(dayOfWeek). $(#misc_6)
+  Q9410 $(PARENT)/#misc_4=Potential for flooding rains $(dayOfWeek). $(#misc_6)
+  Q9605 $(PARENT)/#misc_4=Potential for severe thunderstorms $(dayOfWeek). $(#misc_6)
+  Q9610 $(PARENT)/#misc_4=Severe thunderstorms expected $(dayOfWeek). $(#misc_6)
+  Q9800 $(PARENT)/#misc_4=Watching the tropics $(dayOfWeek). $(#misc_6)
+  Q9805 $(PARENT)/#misc_4=Tropical storm conditions possible $(dayOfWeek). $(#misc_6)
+  Q9810 $(PARENT)/#misc_4=Tropical storm conditions likely $(dayOfWeek). $(#misc_6)
+  Q9815 $(PARENT)/#misc_4=Hurricane conditions possible $(dayOfWeek). $(#misc_6)
+  Q9820 $(PARENT)/#misc_4=Hurricane conditions likely $(dayOfWeek). $(#misc_6)
+  Q9825 $(PARENT)/#misc_4=Major hurricane conditions possible $(dayOfWeek). $(#misc_6)
+  Q9830 $(PARENT)/#misc_4=Major hurricane conditions likely $(dayOfWeek). $(#misc_6)
+  -->
+
+
+  <!-- Hurricanes -->
+
+  <!-- winds could occasionally gusts to Hurricane Force -->
+  <Map Src="Q1028" Dest="Q9815" />
+
+  <!-- hurricane-force winds expected -->
+  <Map Src="Q1030" Dest="Q9820" />
+
+  <!-- hurricane conditions possible -->
+  <Map Src="Q1033" Dest="Q9815" />
+
+  <!-- hurricane conditions likely -->
+  <Map Src="Q1034" Dest="Q9820" />
+
+  <!-- Tropical storm or hurricane conditions possible -->
+  <Map Src="Q9812" Dest="Q9815" />
+  <Map Src="Q1036" Dest="Q9815" />
+
+  <!-- Tropical Storms -->
+
+  <!-- tropical storm force winds expected -->
+  <Map Src="Q1026" Dest="Q9805" />
+
+  <!-- tropical storm conditions possible -->
+  <Map Src="Q1031" Dest="Q9805" />
+
+  <!-- tropical storm conditions likely -->
+  <Map Src="Q1032" Dest="Q9810" />
+  
+  <!-- Watching the tropics -->
+  <Map Src="Q1029" Dest="Q9800" />
+
+
+  <!-- Blizzards -->
+
+  <!-- blizzard conditions likely -->
+  <Map Src="S430011" Dest="Q9030" />
+  <Map Src="S430021" Dest="Q9030" />
+  <Map Src="S430031" Dest="Q9030" />
+  <Map Src="S430041" Dest="Q9030" />
+  <Map Src="S430051" Dest="Q9030" />
+  <Map Src="S430052" Dest="Q9030" />
+  <Map Src="S430053" Dest="Q9030" />
+  <Map Src="S430054" Dest="Q9030" />
+
+  <!-- blizzard conditions with heavy snow and Gusty winds this evening will give way to snow showers overnight -->
+  <Map Src="X4300140021" Dest="Q9030" />
+
+  <!-- snow and Gusty winds will lead to blizzard conditions at times -->
+  <Map Src="X1610430011" Dest="Q9030" />
+  <Map Src="X1610430021" Dest="Q9030" />
+  <Map Src="X1610430031" Dest="Q9030" />
+  <Map Src="X1610430041" Dest="Q9030" />
+  <Map Src="X4210430011" Dest="Q9030" />
+  <Map Src="X4210430021" Dest="Q9030" />
+  <Map Src="X4210430031" Dest="Q9030" />
+  <Map Src="X4210430041" Dest="Q9030" />
+  <Map Src="X4300430011" Dest="Q9030" />
+  <Map Src="X4300430021" Dest="Q9030" />
+  <Map Src="X4300430031" Dest="Q9030" />
+  <Map Src="X4300430041" Dest="Q9030" />
+  <Map Src="X5000430011" Dest="Q9030" />
+  <Map Src="X5000430021" Dest="Q9030" />
+  <Map Src="X5000430031" Dest="Q9030" />
+  <Map Src="X5000430041" Dest="Q9030" />
+
+  <!-- snow and Gusty winds snow will be heavy at times with Gusty winds creating blizzard conditions -->
+  <Map Src="X4300421012" Dest="Q9030" />
+  <Map Src="X4300421022" Dest="Q9030" />
+  <Map Src="X4300421032" Dest="Q9030" />
+  <Map Src="X4300421042" Dest="Q9030" />
+
+  <!-- snow will be heavy at times along with Gusty winds creating blizzard conditions -->
+  <Map Src="X4300421011" Dest="Q9030" />
+  <Map Src="X4300421021" Dest="Q9030" />
+  <Map Src="X4300421031" Dest="Q9030" />
+  <Map Src="X4300421041" Dest="Q9030" />
+
+  <!-- snow will be heavy at times Gusty winds will create blizzard conditions especially this evening -->
+  <Map Src="X4300161021" Dest="Q9030" />
+
+  <!-- snow heavy at times Gusty winds will lead to blizzard conditions especially this afternoon -->
+  <Map Src="X1610430012" Dest="Q9030" />
+
+  <!-- snow heavy at times Gusty winds will lead to blizzard conditions -->
+  <Map Src="X4300430012" Dest="Q9030" />
+  <Map Src="X4300430022" Dest="Q9030" />
+  <Map Src="X4300430032" Dest="Q9030" />
+  <Map Src="X4300430042" Dest="Q9030" />
+
+
+  <!-- Ice -->
+
+  <!-- some icing possible -->
+  <Map Src="A5011" Dest="Q9205" />
+
+  <!-- significant icing possible -->
+  <Map Src="A5021" Dest="Q9210" />
+
+  <!-- some additional icing possible -->
+  <Map Src="A5511" Dest="Q9205" />
+
+  <!-- significant additional icing possible -->
+  <Map Src="A5511" Dest="Q9210" />
+
+  <!-- some icing possible -->
+  <Map Src="Q7642" Dest="Q9205" />
+
+  <!-- significant icing possible -->
+  <Map Src="Q7643" Dest="Q9210" />
+
+  <!-- significant icing likely -->
+  <Map Src="Q7644" Dest="Q9210" />
+
+
+  <!-- Snow -->
+
+  <!-- snow accumulating 1 to 3 inches -->
+  <Map Src="A1041" Dest="Q9005" />
+
+  <!-- 1 to 3 inches of snow expected -->
+  <Map Src="A1042" Dest="Q9005" />
+
+  <!-- snow accumulating 4 to 6 inches -->
+  <Map Src="A1071" Dest="Q9010" />
+
+  <!-- 4 to 6 inches of snow expected -->
+  <Map Src="A1072" Dest="Q9010" />
+
+  <!-- snow accumulating 5 to 8 inches -->
+  <Map Src="A1081" Dest="Q9015" />
+
+  <!-- 5 to 8 inches of snow expected -->
+  <Map Src="A1082" Dest="Q9015" />
+
+  <!-- snow accumulating 6 to 10 inches -->
+  <Map Src="A1091" Dest="Q9015" />
+
+  <!-- 6 to 10 inches of snow expected -->
+  <Map Src="A1092" Dest="Q9015" />
+
+  <!-- snow accumulating 8 to 12 inches -->
+  <Map Src="A1101" Dest="Q9015" />
+
+  <!-- 8 to 12 inches of snow expected -->
+  <Map Src="A1102" Dest="Q9015" />
+
+  <!-- snow accumulation of a foot or more -->
+  <Map Src="A1121" Dest="Q9020" />
+
+  <!-- foot or more of snow expected -->
+  <Map Src="A1122" Dest="Q9020" />
+
+  <!-- significant snow accumulation possible -->
+  <Map Src="A1204" Dest="Q9025" />
+
+  
+  <!-- Severe Thunderstorms -->
+
+  <!-- strong to severe thunderstorms likely -->
+  <Map Src="S030011" Dest="Q9605" />
+  <Map Src="S030021" Dest="Q9605" />
+  <Map Src="S030031" Dest="Q9605" />
+  <Map Src="S030041" Dest="Q9605" />
+  <Map Src="S030012" Dest="Q9605" />
+  <Map Src="S030022" Dest="Q9605" />
+  <Map Src="S030032" Dest="Q9605" />
+  <Map Src="S030042" Dest="Q9605" />
+  <Map Src="S030013" Dest="Q9605" />
+  <Map Src="S030023" Dest="Q9605" />
+  <Map Src="S030033" Dest="Q9605" />
+  <Map Src="S030043" Dest="Q9605" />
+  <Map Src="S030051" Dest="Q9605" />
+  <Map Src="S030052" Dest="Q9605" />
+  <Map Src="S030053" Dest="Q9605" />
+  <Map Src="S030054" Dest="Q9605" />
+
+  <!-- windy strong to severe thunderstorms -->
+  <Map Src="S031011" Dest="Q9605" />
+  <Map Src="S031021" Dest="Q9605" />
+  <Map Src="S031031" Dest="Q9605" />
+  <Map Src="S031041" Dest="Q9605" />
+  <Map Src="S031012" Dest="Q9605" />
+  <Map Src="S031022" Dest="Q9605" />
+  <Map Src="S031032" Dest="Q9605" />
+  <Map Src="S031042" Dest="Q9605" />
+  <Map Src="S031051" Dest="Q9605" />
+  <Map Src="S031052" Dest="Q9605" />
+  <Map Src="S031053" Dest="Q9605" />
+  <Map Src="S031054" Dest="Q9605" />
+
+</SevereQualifiers>

@@ -1,0 +1,38 @@
+﻿{
+  "address": "224.1.1.77",
+  "interface": "10.100.102.10",
+  "airnow_key": "",
+  "log_level": "Info",
+  "stars": [
+  	{
+  		"headend_id": "000000",
+  		"config": "MachineProductCfg.xml",
+  		"star_flags": ["Domestic_SD_Universe", "Platform_I2JR"],
+  		"crawls": ["Hello World!"]
+  	}
+  ],
+  "mqtt": {
+    "server": "192.168.1.69:1883",
+    "username": "something",
+    "password": "anything",
+    "enable_heartbeats": true,
+    "enable_presentations": true,
+    "presentation_offset": 5000,
+    "events": [
+      {
+        "topic": "intelli/lf",
+        "payload": "D",
+        "offset": 30000,
+        "cancel_offset": 500,
+        "cancel_presentation": ["sidebar0_0", "ldl0_0"],
+        "run_presentation": [
+          {"flavor": "domestic/V", "duration": 1950, "id": "LF"}
+        ],
+        "run_presentation_post": [
+          {"flavor": "domestic/LdlC", "duration": 72000, "id": "ldl0_0"},
+          {"flavor": "domestic/SidebarC", "duration": 72000, "id": "sidebar0_0"}
+        ]
+      }
+    ]
+  }
+}
